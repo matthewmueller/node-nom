@@ -1,3 +1,4 @@
 --require should
 --reporter list
 --growl
+--timeout 4000
