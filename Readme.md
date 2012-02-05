@@ -1,6 +1,6 @@
 # nom #
 
-Nom uses [cheerio](http://github.com/MatthewMueller/cheerio) to provide the core jQuery API for grabbing and manipulating the response.
+Ridiculous simple screen scrapper for Node.js. Nom uses [cheerio](http://github.com/MatthewMueller/cheerio) to provide the core jQuery API for grabbing and manipulating the response.
   
 ## Installation ##
 
