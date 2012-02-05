@@ -1,7 +1,6 @@
+# nom #
 
-# nom
-
-  Dead simple screen scrapper. Nom uses [cheerio](http://github.com/MatthewMueller/cheerio) to provide the core jQuery API for grabbing and manipulating the response.
+Nom uses [cheerio](http://github.com/MatthewMueller/cheerio) to provide the core jQuery API for grabbing and manipulating the response.
   
 ## Installation ##
 
