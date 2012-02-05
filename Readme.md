@@ -1,6 +1,6 @@
 # nom #
 
-Ridiculous simple screen scrapper for Node.js. Nom uses [cheerio](http://github.com/MatthewMueller/cheerio) to provide the core jQuery API for grabbing and manipulating the response.
+Om nom nom. Super simple screen scrapper for Node.js. Nom uses [cheerio](http://github.com/MatthewMueller/cheerio) to provide the core jQuery API for grabbing and manipulating the response.
   
 ## Installation ##
 
