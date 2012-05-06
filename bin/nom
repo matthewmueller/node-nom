@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+var nom = require('../'),
+    args = process.argv.slice(2),
+    exit = process.exit;
+
+if(!args.length) {
+  console.log('Usage: nom <url> [selector]');
+  exit(0);
+}
+
+url = args[0];
+selector = args[1];
+
+nom(url, function(err, $) {
+  if(err) throw err;
+  var out = '';
+
+  if(selector) {
+    out = $(selector).html();
+  } else {
+    out = $.html();
+  }
+
+  console.log(out);
+});
+
