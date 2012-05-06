@@ -1,6 +1,6 @@
 {
     "name": "nom"
-  , "version": "0.0.1"
+  , "version": "0.0.2"
   , "description": "Nom nom sites using cheerio"
   , "keywords": ["nom", "screen", "scrapper", "cheerio"]
   , "author": "Matthew Mueller <mattmuelle@gmail.com>"
@@ -13,5 +13,6 @@
     "should" : "*"
   }
   , "main": "index"
+  , "bin" : "./bin/nom"
   , "engines": { "node": "0.6.x" }
 }

@@ -33,11 +33,23 @@ Om nom nom. Super simple screen scrapper for Node.js. Nom uses [cheerio](http://
     nom('http://google.com', google)
        ('http://apple.com', apple);
 
+## Command Line Usage ##
+
+    $ nom <url> [selector] 
+
+Arguments: 
+* url: website you'd like to request
+* selector: id, class, attribute or any other soupselect compatible selector
+
+### Example ###
+
+    $ nom http://google.com '#hplogo'
+
 ## License 
 
 (The MIT License)
 
-Copyright (c) 2011 Matthew Mueller &lt;mattmuelle@gmail.com&gt;
+Copyright (c) 2012 Matthew Mueller &lt;mattmuelle@gmail.com&gt;
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
