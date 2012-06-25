@@ -3,10 +3,10 @@
  * Module dependencies.
  */
 
-var nom = require('../')
-  , should = require('should')
-  , utils = nom.utils
-  , after = utils.after;
+var nom = require('../'),
+    should = require('should'),
+    utils = nom.utils,
+    after = utils.after;
 
 describe('nom', function() {
   
@@ -16,7 +16,7 @@ describe('nom', function() {
       $('title').text().should.equal('Google');
       done();
     });
-  };
+  }
   
   it('should have a version number', function() {
     nom.version.should.match(/^\d+\.\d+\.\d+$/);
@@ -36,6 +36,14 @@ describe('nom', function() {
       if(err) return done(err);
       $google('title').text().should.equal('Google');
       $apple('title').text().should.equal('Apple');
+      done();
+    });
+  });
+
+  it('should allow multiple websites to be requested using an array', function(done) {
+    
+    nom(['http://google.com', 'http://apple.com'], function(err, out) {
+      if(err) return done(err);
       done();
     });
   });
