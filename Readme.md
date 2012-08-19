@@ -51,7 +51,7 @@ Arguments:
 
 ### Example ###
 
-    $ nom http://google.com '#hplogo'
+    $ nom http://google.com title
 
 ## License 
 
