@@ -1,12 +1,12 @@
 {
     "name": "nom"
-  , "version": "0.0.2"
+  , "version": "0.0.3"
   , "description": "Nom nom sites using cheerio"
   , "keywords": ["nom", "screen", "scrapper", "cheerio"]
   , "author": "Matthew Mueller <mattmuelle@gmail.com>"
   , "dependencies": {
     "cheerio" : "*",
-    "request" : "2.x"
+    "superagent" : "*"
   }
   , "devDependencies" : {
     "mocha" : "0.x",
