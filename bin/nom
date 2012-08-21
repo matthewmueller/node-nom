@@ -21,6 +21,6 @@ nom(url, function(err, $) {
     out = $.html();
   }
 
-  console.log(out);
+  process.stdout.write(out);
 });
 
