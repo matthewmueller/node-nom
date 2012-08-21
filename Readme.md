@@ -9,29 +9,37 @@ Om nom nom. Super simple screen scrapper for Node.js. Nom uses [cheerio](http://
 ## Usage ##
 
 ### Basic ###
-    nom('http://google.com', function(err, $) {
-      $('title').text() // => "Google"
-    });
+
+```js    
+nom('http://google.com', function(err, $) {
+  $('title').text() // => "Google"
+});
+```
 
 ### Multiple Requests ###
-    nom('http://google.com', 'http://apple.com', function(err, $g, $a) {
-      $g('title').text(); // => Google
-      $a('title').text(); // => Apple
-    });
 
+```js
+nom('http://google.com', 'http://apple.com', function(err, $g, $a) {
+  $g('title').text(); // => Google
+  $a('title').text(); // => Apple
+});
+```
 
 ### Another way... ###
-    function apple(err, $) {
-      $('title').text(); // => Google
-    }
 
-    function google(err, $) {
-      $('title').text(); // => Apple
-    }
+```js
+function apple(err, $) {
+  $('title').text(); // => Google
+}
 
-    // Request currying
-    nom('http://google.com', google)
-       ('http://apple.com', apple);
+function google(err, $) {
+  $('title').text(); // => Apple
+}
+
+// Request currying
+nom('http://google.com', google)
+   ('http://apple.com', apple);
+```
 
 ## Command Line Usage ##
 
@@ -43,7 +51,7 @@ Arguments:
 
 ### Example ###
 
-    $ nom http://google.com '#hplogo'
+    $ nom http://google.com title
 
 ## License 
 
