@@ -16,7 +16,7 @@ nom(url, function(err, $) {
   var out = '';
 
   if(selector) {
-    out = $(selector).html();
+    out = $.html(selector);
   } else {
     out = $.html();
   }
