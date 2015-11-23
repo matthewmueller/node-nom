@@ -4,7 +4,7 @@ Om nom nom. Super simple asynchronous screen scrapper for Node.js. Nom uses [che
   
 ## Installation ##
 
-`npm install nom`
+`npm install matthewmueller/nom`
 
 ## Usage ##
 
